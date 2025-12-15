@@ -1,0 +1,71 @@
+{
+  "app": {
+    "bundleName": "com.harmony.app.example",
+    "vendor": "harmony",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    },
+    "apiVersion": {
+      "compatible": 9,
+      "target": 9
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.harmony.app.example",
+    "name": "HarmonyApp",
+    "mainAbility": "MainAbility",
+    "deviceType": ["phone"],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "HarmonyApp",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": ["entity.system.home"],
+            "actions": ["action.system.home"]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:app_name",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "resources": {
+      "strings": [
+        {
+          "name": "app_name",
+          "value": "Harmony应用"
+        },
+        {
+          "name": "mainability_description",
+          "value": "主页面"
+        }
+      ],
+      "colors": [
+        {
+          "name": "primary_color",
+          "value": "#007AFF"
+        },
+        {
+          "name": "secondary_color",
+          "value": "#5AC8FA"
+        }
+      ],
+      "icons": [
+        {
+          "name": "icon",
+          "value": "/resources/base/media/icon.png"
+        }
+      ]
+    }
+  }
+}
